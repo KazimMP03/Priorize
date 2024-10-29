@@ -44,9 +44,9 @@ def main():
             task_id = input("ID da tarefa: ")
             title = input("Novo título (ou deixar vazio): ")
             description = input("Nova descrição (ou deixar vazio): ")
-            due_date_str = input("Nova data de vencimento (YYYY-MM-DD) ou deixar vazio: ")
+            due_date_str = input("Nova data de vencimento (DD-MM-YYYY) ou deixar vazio: ")
             if due_date_str:
-                due_date = datetime.strptime(due_date_str, "%Y-%m-%d")
+                due_date = datetime.strptime(due_date_str, "%d-%m-%Y")
             else:
                 due_date = None
             priority = input("Nova prioridade (baixa, moderada, alta ou deixar vazio): ")
